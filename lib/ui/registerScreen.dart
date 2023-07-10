@@ -1,3 +1,4 @@
+import 'package:first_project/ui/registerScreen_2.dart';
 import 'package:flutter/material.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -18,61 +19,88 @@ class RegisterScreen extends StatelessWidget {
                 ),),
                 SizedBox(height: 20,),
                 TextFormField(
-                  textInputAction: TextInputAction.next,
                   decoration: const InputDecoration(
-                    labelText: "Phone number",
                     border: OutlineInputBorder(),
+                    prefixIcon: Icon(
+                      Icons.phone,
+                      color: Colors.green,
+                    ),
+                    labelText: "Phone Number ",
                   ),
-                ),
-                SizedBox(height: 20,),
-                TextFormField(
+                  keyboardType: TextInputType.number,
                   textInputAction: TextInputAction.next,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    labelText: "Address",
-                    border: OutlineInputBorder(),
-                  ),
                 ),
                 SizedBox(height: 20,),
                 TextFormField(
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(
+                      Icons.landscape,
+                      color: Colors.green,
+                    ),
+                    labelText: "Address ",
+                  ),
+                  keyboardType: TextInputType.streetAddress,
                   textInputAction: TextInputAction.next,
-                  keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
-                    labelText: "Company name",
-                    border: OutlineInputBorder(),
-                  ),
                 ),
                 SizedBox(height: 20,),
-                TextFormField(
-                  textInputAction: TextInputAction.next,
-                  keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
-                    labelText: "Website name",
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-                SizedBox(height: 20,),
-                TextFormField(
-                  textInputAction: TextInputAction.next,
-                  keyboardType: TextInputType.phone,
-                  decoration: InputDecoration(
-                    labelText: "E-mail address",
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-                SizedBox(height: 20,),
-                TextFormField(
-                  obscureText: true,
-                  decoration: InputDecoration(
 
-                    labelText: "Password",
+                TextFormField(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
+                    prefixIcon: Icon(
+                      Icons.person,
+                      color: Colors.green,
+                    ),
+                    labelText: "Company name ",
                   ),
+                  keyboardType: TextInputType.name,
+                  textInputAction: TextInputAction.next,
+                ),
+                SizedBox(height: 20,),
+                TextFormField(
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(
+                      Icons.email_outlined,
+                      color: Colors.green,
+                    ),
+                    labelText: "Email address",
+                  ),
+                  keyboardType: TextInputType.emailAddress,
+                  textInputAction: TextInputAction.next,
+                ),
+                SizedBox(height: 20,),
+                TextFormField(
+                  decoration: InputDecoration(
+                    border: const OutlineInputBorder(),
+                    suffixIcon: IconButton(
+                      onPressed: () {
+
+                          print(obscure);
+                          obscure = !obscure;
+                          print(obscure);
+                          setState(() {});
+                      },
+                      icon: Icon(obscure == false
+                          ? Icons.remove_red_eye_outlined
+                          : Icons.visibility_off),
+                      color: Colors.green,
+                    ),
+                    prefixIcon: const Icon(
+                      Icons.lock_outline,
+                      color: Colors.green,
+                    ),
+                    hintText: "Password ",
+                  ),
+                  obscureText: obscure,
+                  keyboardType: TextInputType.visiblePassword,
+                  textInputAction: TextInputAction.done,
                 ),
                 SizedBox(height: 5,),
                 Row(
                   children: [
-                    IconButton(onPressed: (){}, icon: Icon(
+                    IconButton(onPressed: (){}, icon: const Icon(
                         Icons.check_box_outline_blank
                     ),
                     ),
@@ -122,4 +150,6 @@ class RegisterScreen extends StatelessWidget {
         ),
     );
   }
+
+  void setState(Null Function() param0) {}
 }
