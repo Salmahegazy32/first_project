@@ -12,14 +12,14 @@ class RegisterScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start ,
               children: [
-                Text( "Register", style: TextStyle(
+                const Text( "Register", style: TextStyle(
                   fontSize: 50,
 
                 ),),
                 SizedBox(height: 20,),
                 TextFormField(
                   textInputAction: TextInputAction.next,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     labelText: "Phone number",
                     border: OutlineInputBorder(),
                   ),

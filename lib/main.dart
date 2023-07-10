@@ -1,5 +1,6 @@
 import 'package:first_project/blog/blog_screen.dart';
 import 'package:first_project/tasks/seasion_four/messages_screen.dart';
+import 'package:first_project/ui/registerScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.green,
       ),
-      home: const BlogScreen(),
+      home: const RegisterScreen(),
     );
   }
 }
