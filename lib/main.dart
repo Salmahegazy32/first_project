@@ -1,6 +1,6 @@
 import 'package:first_project/blog/blog_screen.dart';
 import 'package:first_project/tasks/seasion_four/messages_screen.dart';
-import 'package:first_project/ui/registerScreen.dart';
+import 'package:first_project/tasks/sesion_three/registerScreen.dart';
 import 'package:first_project/ui/registerScreen_2.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
