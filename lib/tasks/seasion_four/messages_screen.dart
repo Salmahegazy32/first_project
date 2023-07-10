@@ -15,7 +15,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.orange,
         centerTitle: true,
         title: const Text("Messages"),
       ),
@@ -47,7 +47,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
                       children: [
                         Expanded(
                           child: Text(
-                            "Mohamed",
+                            "Salma",
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: TextStyle(
@@ -58,24 +58,19 @@ class _MessagesScreenState extends State<MessagesScreen> {
                         ),
                         SizedBox(width: 30,),
                         Text(
-                          "12:07",
+                          "08:46",
                           style: TextStyle(
                               fontSize: 16,
                               color: Colors.black
                           ),
                         ),
-
-
-
-
-
                       ],
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
                     child: Text(
-                      "Hello world hello world Hello world hello world Hello world hello world",
+                      "It totally makes sense to get some extra day-off",
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(

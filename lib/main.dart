@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.green,
       ),
-      home: const RegisterScreen(),
+      home: const MessagesScreen(),
     );
   }
 }

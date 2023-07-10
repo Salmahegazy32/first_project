@@ -14,7 +14,7 @@ class RegisterScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start ,
               children: [
                 const Text( "Register", style: TextStyle(
-                  fontSize: 50,
+                  fontSize: 40,
 
                 ),),
                 SizedBox(height: 20,),
@@ -139,7 +139,7 @@ class RegisterScreen extends StatelessWidget {
                       onPressed: () {},
                       child: const Text(
                         "Log in ",
-                        style: TextStyle(color: Colors.blue, fontSize: 16),
+                        style: TextStyle(color: Colors.green, fontSize: 16),
                       ),
                     ),
                   ],
