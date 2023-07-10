@@ -44,7 +44,7 @@ class _BlogScreenState extends State<BlogScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.blueGrey,
         centerTitle: true,
         title: const Text("Blog"),
       ),
